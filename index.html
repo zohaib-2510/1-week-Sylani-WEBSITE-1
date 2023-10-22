@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" integrity="sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Gabarito:wght@400;500&family=Indie+Flower&family=Roboto:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#navlink{
+position: relative;
+color: #000;
+font-weight: 700;
+transition: 1.2s;
+}
+
+#navlink::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  #000;
+left: 0;
+bottom: -3px;
+transition: ease .43s;
+}
+#navlink:hover::after{
+width: 100%;
+}
+#navlink:hover{
+    color:#213556;
+}
+
+
+
+button{
+    padding: 1.0% 3%;
+    border:none;
+    border-radius: 50px;
+    border: 1.5px solid #213556;
+    color: #000;
+    cursor: pointer;    
+    background-color: transparent;
+transition:  1.2s;
+}
+button:hover{
+    color: #fff;
+    background-color:#213556;
+}
+#dddd{
+    padding: 6%s;
+    border:none;
+    border-radius: 50px;
+    border: 1.5px solid #213556;
+    color: #000;
+    cursor: pointer;    
+    background-color: transparent;
+transition:  1.2s;
+}
+#dddd:hover{
+    background-color:#213556;
+    color: #fff;
+}
+*::selection{
+    background-color:#213556;
+    color: #fff;
+}
+.home-page{
+    
+    background-image: url("./img/homepagebackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+width: 100%;
+height: 100vh;
+border-bottom: 10px solid #000;
+}
+.h1left{
+    padding-left: 10%;
+    color: #213556;
+    font-weight: 700;
+}
+.text{
+    padding: 5% 1% 1% 5%;
+}
+.text p{
+    padding-right: 40%;
+    padding-left: 10%;
+}
+@media screen and (max-width:880px) {
+    .text p{
+        padding: 0;
+    }
+}
+
+.b1{
+    width: 100%;
+    height: 50vh;
+    background-image: url("./b1\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid black;
+}
+.about-page{
+    width: 100%;
+background-color: #E3E6F3;
+color: #213556;
+border-bottom: 5px solid black;
+}
+.card1{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #213556;
+    border-radius: 10px;
+text-align: center;
+cursor: pointer;
+    background-color:transparent;
+transition: all 0.5s ease-in-out;
+}
+.card1:hover{
+    background-color: #213556;
+    color: #fff;
+}
+.all-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+#about-h1{
+    text-align: center;
+    font-family: "Nosifer";
+    padding-top: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    
+    font-size: 50px;
+
+}
+#iknkn{
+    text-align: center;
+    
+}
+.hh{
+    border: 1px solid black;
+}
+.hh:hover{
+    background-color: #E3E6F3;
+    color: #213556;
+}
+.hhh{
+    border: 1px solid black;
+}
+.hhh:hover{
+    background-color: #E3E6F3;
+    color: #213556;
+}
+.shopping{
+    background-color: #1c8e9290;
+    width: 100%;
+    height: 100vh;
+}
+.shopping h1 {
+    color: #000;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.scs1{
+    width: 400px;
+    height: 500px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    color: #000;
+}
+.scs1:hover{
+    background-color: #213556;
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+.scall{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,400px);
+    gap: 40px;
+}
+.text23{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #000;
+}
+i{
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+color: red;
+opacity: 0;
+transition:1s ease-in-out;
+}
+.shopping-pagel{
+    background-color: #28272C;
+    width: 100%;
+    height: 100vh;
+
+}
+.hhhh{
+    border: 1px solid black;
+}
+.hhhh:hover{
+    background-color: #E3E6F3;
+    color: #213556;
+}
+
+    </style>
+</head>
+<body>
+    
+
+  <div class="home-page">
+    <nav style="background: transparent; box-shadow: none;" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+          <button style="color: white;"
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a id="navlink" class="nav-link active" href="#">Shopping</a>
+              </li>
+              <li class="nav-item">
+                <a id="dddd" style="" class="nav-link active" href="#">Login / SignUp</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="text">
+        <h1><span style="color: #213556;">Every Thing</span> <br> <span id="auto-type" class="h1left"></span></h1><br>
+        <p style="color: #213556;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam amet nam praesentium soluta similique doloribus blanditiis mollitia beatae? Eos quasi fuga itaque, eveniet temporibus earum iusto ratione modi quaerat nostrum.</p>
+        <button style="border: 1.5px solid black;" id="btn">Clicke ME</button><button style="border: 1.5px solid black;"  id="btn">Read More</button>
+      </div>
+  </div>
+<!-- home page completed -->
+
+<div class="b1">
+
+</div>
+
+
+<div class="about-page">
+    <div class="left">
+<h1 id="about-h1"><span id="g">A</span><span id="g">b</span><span id="g">o</span><span id="g">u</span><span id="g">t</span></h1>
+<div class="all-cards">
+    <div class="card1">
+        <p style="text-align: center; padding-top: 5px; font-size: 29px;" id="heading">About <span style="border-bottom: 2px solid #213556;">Cara</span>  <i id="i" style="color: transparent; transition: all 0.5s ease-in-out;" class="fa-solid fa-heart"></i></p>
+        <hr>
+        <p>
+            <span id="iknkn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur </span>
+        </p>
+        <p id="rep"></p>
+        <hr>
+        <button class="hh" id="readmore">ReadMore</button>
+        <button  class="hhh" id="like">Like It</button>
+        </div>
+
+
+
+        <div class="card1">
+            <p style="text-align: center; padding-top: 5px; font-size: 29px;" id="heading">About <span style="border-bottom: 2px solid #213556;">Shopping</span>  <i id="ii" style="color: transparent; transition: all 0.5s ease-in-out;" class="fa-solid fa-heart"></i></p>
+            <hr>
+            <p>
+                <span id="iknkn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur </span>
+            </p>
+            <p id="repp"></p>
+            <hr>
+            <button class="hh" id="readmoree">ReadMore</button>
+            <button  class="hhh" id="likee">Like It</button>
+            </div>
+
+
+
+
+
+
+            
+        <div class="card1">
+            <p style="text-align: center; padding-top: 5px; font-size: 29px;" id="heading">About <span style="border-bottom: 2px solid #213556;">Reviews</span>  <i id="iii" style="color: transparent; transition: all 0.5s ease-in-out;" class="fa-solid fa-heart"></i></p>
+            <hr>
+            <p>
+                <span id="iknkn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur </span>
+            </p>
+            <p id="reppp"></p>
+            <hr>
+            <button class="hh" id="readmoreee">ReadMore</button>
+            <button  class="hhh" id="likeee">Like It</button>
+            </div>
+
+
+
+
+            
+        <div class="card1">
+            <p style="text-align: center; padding-top: 5px; font-size: 29px;" id="heading">About <span style="border-bottom: 2px solid #213556;">Prouduct</span>  <i id="iiii" style="color: transparent; transition: all 0.5s ease-in-out;" class="fa-solid fa-heart"></i></p>
+            <hr>
+            <p>
+                <span id="iknkn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur </span>
+            </p>
+            <p id="repppp"></p>
+            <hr>
+            <button class="hh" id="readmoreeee">ReadMore</button>
+            <button  class="hhh" id="likeeee">Like It</button>
+            </div>
+
+</div>
+<br>
+    
+</div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <!-- script -->
+<script src="./shopping.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    var typed = new Typed("#auto-type",{
+      strings : ["You Want"],
+      typeSpeed : 150,
+      backSpeed : 150
+    })  
+    </script>
+<script>var btn = document.getElementsByClassName("hhh");
+    btn.addEventListener("click",function(){
+        var i = document.getElementById("i").style.display="block"
+        
+        i.style.color="red"
+    
+    })</script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js" integrity="sha512-rXm6RiYDlz+aZC/ht75tGzeAmCg4gVfBA6Be5s5uENSahiXkgwEy10J2Cc+dxUAW4lRRQYbS5pugMOqBrs8ksw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
